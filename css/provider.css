@@ -1,0 +1,41 @@
+.provider-bookings {
+    display: grid;
+    gap: 16px
+}
+
+.booking-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 22px
+}
+
+.booking-card.urgent {
+    border-left: 5px solid #ef4444
+}
+
+.booking-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px
+}
+
+.review-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px
+}
+
+@media(max-width:700px) {
+    .review-grid {
+        grid-template-columns: 1fr
+    }
+}
